@@ -1,7 +1,7 @@
 version: 0.2
 env:
   variables:
-      CODEBUILD_SOURCE_VERSION: "$CODEBUILDSOURCEBRANCH"
+      CODEBUILD_SOURCE_VERSION: ""
 phases:
   install:
     commands:
