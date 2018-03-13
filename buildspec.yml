@@ -1,5 +1,7 @@
 version: 0.2
-
+env:
+  variables:
+      BRANCH: "develop"
 phases:
   install:
     commands:
