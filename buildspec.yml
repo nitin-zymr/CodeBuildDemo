@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   variables:
-      BRANCH_NAME: ""
+      BRANCH_NAME: "$BRANCH_NAME"
 phases:
   install:
     commands:
