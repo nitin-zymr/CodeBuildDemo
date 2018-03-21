@@ -2,21 +2,21 @@ version: 0.2
 
 env:
   variables:
-      CODEBUILD_SOURCE_VERSION: ""
+      SOURCE_VERSION: ""
 phases:
   install:
     commands:
-      - echo $CODEBUILD_SOURCE_VERSION Branch ! install phase...
+      - echo $SOURCE_VERSION Branch ! install phase...
   pre_build:
     commands:
-      - echo $CODEBUILD_SOURCE_VERSION Branch ! pre_build phase...
+      - echo $SOURCE_VERSION Branch ! pre_build phase...
   build:
     commands:
-      - echo $CODEBUILD_SOURCE_VERSION Branch ! Build started on `date`
+      - echo $SOURCE_VERSION Branch ! Build started on `date`
       - mvn install
   post_build:
     commands:
-      - echo $CODEBUILD_SOURCE_VERSION Branch ! Build completed on `date`
+      - echo $SOURCE_VERSION Branch ! Build completed on `date`
 artifacts:
   files:
     - target/messageUtil-1.0.jar
