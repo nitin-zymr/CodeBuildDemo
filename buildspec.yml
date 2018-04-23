@@ -8,6 +8,7 @@ phases:
     commands:
       - echo $SOURCE_VERSION Branch Welcome  to Codebuild ! install phase...
       - echo "testiinnnnnnnggggggg webhookkkkkkkkkkk"
+      - echo "testiinnnnnnnggggggg webhookkkkkkkkkk22222222222k"
   pre_build:
     commands:
       - echo $SOURCE_VERSION Branch ! pre_build phase...
