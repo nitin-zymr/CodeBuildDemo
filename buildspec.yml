@@ -8,7 +8,6 @@ phases:
     commands:
       - echo $SOURCE_VERSION Branch ! install phase...
       - echo "Testing git webhook"
-      - echo "master webhook"
   pre_build:
     commands:
       - echo $SOURCE_VERSION Branch ! pre_build phase...
